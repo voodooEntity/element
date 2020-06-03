@@ -21,6 +21,17 @@
                 "handler"   : {
                     "collide"  : ["mainStage","hitTheWall"],
                     "interact" : ["mainStage","touchTheWall"]
+                },
+                "name" : "badummts",
+                "animation" : {
+                    "path" : [
+                        [0,30,30],
+                        [2,80,80],
+                        [4,60,90],
+                        [6,40,45],
+                        [8,30,30]
+                    ],
+                    "loop" : true
                 }
             },{
                 "element" : "ywall",
@@ -43,15 +54,15 @@
                 "animation" : {
                     "path" : [
                         [0,0,0],
-                        [2,0,24],
-                        [4,24,24],
+                        [2,0,30],
+                        [4,24,30],
                         [6,24,0],
                         [8,0,0]
                     ],
                     "loop" : true
                 }
             },
-            {
+            { 
                 "element" : "xwall",
                 "x" : 0,
                 "y" : 72,
@@ -59,15 +70,6 @@
                 "handler"   : {
                     "collide"  : ["mainStage","hitTheWall"],
                     "interact" : ["mainStage","touchTheWall"]
-                },
-                "name" : "iliketomovit",
-                "animation" : {
-                    "path" : [
-                        [0,0,0],
-                        [2,50,50],
-                        [4,0,0]
-                    ],
-                    "loop" : true
                 }
             },
             {
@@ -131,12 +133,30 @@
                 }
             },{
                 "element"   : "someBlocks",
-                "x"         : 64,
-                "y"         : 120,
+                "x"         : 160,
+                "y"         : 60,
                 "block"     : true,
                 "handler"   : {
                     "collide"  : ["mainStage","hitTheWall"],
                     "interact" : ["mainStage","touchTheWall"]
+                },
+                "name" : "iliketomovit",
+                "animation" : {
+                    "path" : [
+                        [0,0,0],    
+                        [2,-12,-12],
+                        [4,14,14],
+                        [6,14,-14],
+                        [8,-10,-10], 
+                        [10,14,-11],
+                        [12,49,32],  
+                        [14,-10,44],
+                        [16,-11,-11], 
+                        [18,-40,-40],
+                        [20,43,24],
+                        [22,25,43]
+                    ],
+                    "loop" : true
                 }
             },{
                 "element"   : "someBlocks",

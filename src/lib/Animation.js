@@ -148,22 +148,23 @@ class Animation extends Extender {
         var yStepLength         = Math.abs(beta[2] - alpha[2]) / (duration / 1000 * config.tickRate);
         //console.log(subPathTimePosition,xStepLength,yStepLength);
         
+
         // to calculate shift for X axis we need to dispatch directions
         if(beta[1] > alpha[1]) {
-            var xPos  = subPathTimePosition / 1000 * xStepLength;
+            var xPos  = alpha[1] + (subPathTimePosition / 1000 * xStepLength);
         } else if(beta[1] < alpha[1]) {
-            var xPos = ( duration * config.tickRate - subPathTimePosition ) / 1000 * xStepLength;
+            var xPos  = alpha[1] +  ~(subPathTimePosition / 1000 * xStepLength);
         } else {
-            var xPos = alpha[1];
+            var xPos  = alpha[1];
         }
 
         // to calculate shift for Y axis we need to dispatch directions
         if(beta[2] > alpha[2]) {
-            var yPos  = subPathTimePosition / 1000 * yStepLength;
+            var yPos  = alpha[2] + subPathTimePosition / 1000 * yStepLength;
         } else if(beta[2] < alpha[2]){
-            var yPos = ( duration * config.tickRate - subPathTimePosition ) / 1000 * yStepLength;
+            var yPos  = alpha[2] + ~(subPathTimePosition / 1000 * yStepLength);
         } else {
-            yPos = alpha[2];
+            yPos      = alpha[2];
         }
 
        // console.log(xPos,yPos);
