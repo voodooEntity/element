@@ -65,13 +65,13 @@
 	},
 	"components": {
 		"pixelboxCore": true,
-		"webGL": false,
+		"webGL": true,
 		"miniText": true,
 		"keyboard": true,
 		"gamepad": true,
 		"AudioManager": true,
 		"patatracker": false,
-		"bleeper": false,
+		"bleeper": true,
 		"TINA": false,
 		"polyfill": false
 	},

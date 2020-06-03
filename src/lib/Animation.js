@@ -119,7 +119,6 @@ class Animation extends Extender {
         // get the remainder, this tells us how weep we are 
         // into the animation at this point
         var remainder = Math.floor(timeDiff % (this.duration * 1000));
-        //console.log("remainder",remainder);
 
         // for each coords in part
         for(var i in this.path) {
@@ -135,8 +134,6 @@ class Animation extends Extender {
 
                     // and calc the path parts duration by substracti alpha (starttime) from beta(endtime)
                     duration = (beta[0] - alpha[0]) * 1000;
-                    //console.log(alpha,beta,duration);
-                    //console.log(i);
                     break;
                 }
             }
@@ -146,8 +143,6 @@ class Animation extends Extender {
         var subPathTimePosition = (remainder - alpha[0] * 1000) * config.tickRate;
         var xStepLength         = Math.abs(beta[1] - alpha[1]) / (duration / 1000 * config.tickRate);
         var yStepLength         = Math.abs(beta[2] - alpha[2]) / (duration / 1000 * config.tickRate);
-        //console.log(subPathTimePosition,xStepLength,yStepLength);
-        
 
         // to calculate shift for X axis we need to dispatch directions
         if(beta[1] > alpha[1]) {
@@ -164,11 +159,9 @@ class Animation extends Extender {
         } else if(beta[2] < alpha[2]){
             var yPos  = alpha[2] + ~(subPathTimePosition / 1000 * yStepLength);
         } else {
-            yPos      = alpha[2];
+            var yPos  = alpha[2];
         }
 
-       // console.log(xPos,yPos);
-        //console.log(subPathTimePosition,yStepLength);
         return {
             "x" : xPos + this.element.x,
             "y" : yPos + this.element.y
@@ -188,7 +181,6 @@ class Animation extends Extender {
     }
     
     update(currentPosition) {
-        //console.log("update animation",currentPosition);
         var config = super.get("storage").get("config");
         // first we check if we need to calculate the current position
         if ("undefined" === typeof currentPosition) {
