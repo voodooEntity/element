@@ -1,0 +1,84 @@
+[
+    {
+        "title"    : "playground",
+        "type"     : "play",
+        "mapReso"  : {
+            "x"  : 200,
+            "y"  : 22
+        },
+        "paper"    : 7,
+        "provider" : "mainStage",
+        "camera"   : {
+            "x" : 0,
+            "y" : 0
+        },
+        "elements" : [
+            {
+                "element" : "xwall",
+                "x" : 0,
+                "y" : 0,
+                "block" : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                }
+            },{
+                "element" : "ywall",
+                "name" : "mywall",
+                "x" : 64,
+                "y" : 64,
+                "block" : false,
+                "handler"   : {
+                    "collide"  : {
+                        "provider" : "mainStage",
+                        "method"   : "touchTheWall",
+                        "stackable" : true
+                    },
+                    "interact" : {
+                        "provider"  : "mainStage",
+                        "method"    : "touchTheWall",
+                        "stackable" : false
+                    }
+                },
+                "animation" : {
+                    "path" : [
+                        [0,64,64],
+                        [10,128,128],
+                        [0,64,64]
+                    ],
+                    "loop" : true
+                }
+            },
+            {
+                "element" : "xwall",
+                "x" : 0,
+                "y" : 72,
+                "block" : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                }
+            },
+            {
+                "element" : "xwall",
+                "x" : 0,
+                "y" : 120,
+                "block" : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                }
+            },
+            {
+                "element" : "xwall",
+                "x" : 48,
+                "y" : 120,
+                "block" : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,441 @@
+[
+    {
+        "title"    : "playground",
+        "type"     : "play",
+        "mapReso"  : {
+            "x"  : 200,
+            "y"  : 22
+        },
+        "paper"    : 7,
+        "provider" : "mainStage",
+        "camera"   : {
+            "x" : 0,
+            "y" : 0
+        },
+        "elements" : [
+            {
+                "element" : "xwall",
+                "x" : 0,
+                "y" : 0,
+                "block" : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                }
+            },{
+                "element" : "ywall",
+                "x" : 64,
+                "y" : 64,
+                "block" : false,
+                "name" : "mywall",
+                "handler"   : {
+                    "collide"  : {
+                        "provider" : "mainStage",
+                        "method"   : "touchTheWall",
+                        "stackable" : true
+                    },
+                    "interact" : {
+                        "provider"  : "mainStage",
+                        "method"    : "touchTheWall",
+                        "stackable" : false
+                    }
+                },
+                "animation" : {
+                    "path" : [
+                        [0,0,0],
+                        [2,0,24],
+                        [4,24,24],
+                        [6,24,0],
+                        [8,0,0]
+                    ],
+                    "loop" : true
+                }
+            },
+            {
+                "element" : "xwall",
+                "x" : 0,
+                "y" : 72,
+                "block" : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                },
+                "name" : "iliketomovit",
+                "animation" : {
+                    "path" : [
+                        [0,0,0],
+                        [2,50,50],
+                        [4,0,0]
+                    ],
+                    "loop" : true
+                }
+            },
+            {
+                "element" : "xwall",
+                "x" : 0,
+                "y" : 120,
+                "block" : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                }
+            },
+            {
+                "element" : "xwall",
+                "x" : 144,
+                "y" : 120,
+                "block" : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                }
+            },
+            {
+                "element" : "xwall",
+                "x" : 24,
+                "y" : 120,
+                "block" : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                }
+            },
+            {
+                "element" : "xwall",
+                "x" : 48,
+                "y" : 120,
+                "block" : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                }
+            },
+            {
+                "element" : "xwall",
+                "x" : 72,
+                "y" : 120,
+                "block" : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                }
+            },
+            {
+                "element" : "xwall",
+                "x" : 96,
+                "y" : 120,
+                "block" : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                }
+            },{
+                "element"   : "someBlocks",
+                "x"         : 64,
+                "y"         : 120,
+                "block"     : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                }
+            },{
+                "element"   : "someBlocks",
+                "x"         : 80,
+                "y"         : 50,
+                "block"     : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                }
+            },{
+                "element"   : "someBlocks",
+                "x"         : 96,
+                "y"         : 58,
+                "block"     : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                }
+            },{
+                "element"   : "someBlocks",
+                "x"         : 104,
+                "y"         : 80,
+                "block"     : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                }
+            },
+            {
+                "element" : "xwall",
+                "x" : 118,
+                "y" : 120,
+                "block" : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                }
+            },
+            {
+                "element" : "xwall",
+                "x" : 150,
+                "y" : 120,
+                "block" : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                }
+            },
+            {
+                "element" : "xwall",
+                "x" : 182,
+                "y" : 120,
+                "block" : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                }
+            },
+            {
+                "element" : "xwall",
+                "x" : 222,
+                "y" : 120,
+                "block" : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                }
+            },
+            {
+                "element" : "xwall",
+                "x" : 256,
+                "y" : 120,
+                "block" : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                }
+            },
+            {
+                "element" : "xwall",
+                "x" : 288,
+                "y" : 120,
+                "block" : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                }
+            },
+            {
+                "element" : "xwall",
+                "x" : 96,
+                "y" : 120,
+                "block" : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                }
+            },
+            {
+                "element" : "xwall",
+                "x" : 96,
+                "y" : 120,
+                "block" : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                }
+            },
+            {
+                "element" : "xwall",
+                "x" : 96,
+                "y" : 120,
+                "block" : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                }
+            },
+            {
+                "element" : "xwall",
+                "x" : 96,
+                "y" : 120,
+                "block" : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                }
+            },
+            {
+                "element" : "xwall",
+                "x" : 96,
+                "y" : 120,
+                "block" : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                }
+            },
+            {
+                "element" : "xwall",
+                "x" : 96,
+                "y" : 120,
+                "block" : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                }
+            },
+            {
+                "element" : "xwall",
+                "x" : 96,
+                "y" : 120,
+                "block" : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                }
+            },
+            {
+                "element" : "xwall",
+                "x" : 96,
+                "y" : 120,
+                "block" : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                }
+            },
+            {
+                "element" : "xwall",
+                "x" : 96,
+                "y" : 120,
+                "block" : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                }
+            },
+            {
+                "element" : "xwall",
+                "x" : 96,
+                "y" : 120,
+                "block" : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                }
+            },
+            {
+                "element" : "xwall",
+                "x" : 96,
+                "y" : 120,
+                "block" : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                }
+            },
+            {
+                "element" : "xwall",
+                "x" : 96,
+                "y" : 120,
+                "block" : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                }
+            },{
+                "element" : "xwall",
+                "x" : 0,
+                "y" : 144,
+                "block" : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                }
+            },{
+                "element" : "xwall",
+                "x" : 24,
+                "y" : 144,
+                "block" : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                }
+            },{
+                "element" : "xwall",
+                "x" : 48,
+                "y" : 144,
+                "block" : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                }
+            },{
+                "element" : "xwall",
+                "x" : 72,
+                "y" : 144,
+                "block" : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                }
+            },{
+                "element" : "xwall",
+                "x" : 96,
+                "y" : 144,
+                "block" : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                }
+            }, {
+                "element" : "xwall",
+                "x" : 120,
+                "y" : 144,
+                "block" : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                }
+            },{
+                "element" : "xwall",
+                "x" : 144,
+                "y" : 144,
+                "block" : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                }
+            },{
+                "element" : "xwall",
+                "x" : 168,
+                "y" : 144,
+                "block" : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                }
+            },{
+                "element" : "xwall",
+                "x" : 192,
+                "y" : 144,
+                "block" : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                }
+            },{
+                "element" : "xwall",
+                "x" : 216,
+                "y" : 144,
+                "block" : true,
+                "handler"   : {
+                    "collide"  : ["mainStage","hitTheWall"],
+                    "interact" : ["mainStage","touchTheWall"]
+                }
+            }
+        ]
+    }
+]

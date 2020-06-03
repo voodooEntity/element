@@ -1,0 +1,182 @@
+{
+    "mainCharacter" : {
+        "name"     : "maxime",
+        "gravity"  : 1,
+        "elements" : [
+            {
+                "x"         : 0,
+                "y"         : 0,
+                "rotx"      : false,
+                "roty"      : false,
+                "tileID"    : 1,
+                "tileSheet" : 0
+            },
+            {
+                "x"         : 0,
+                "y"         : 8,
+                "rotx"      : false,
+                "roty"      : false,
+                "tileID"    : 1,
+                "tileSheet" : 0
+            },
+            {
+                "x"         : 8,
+                "y"         : 8,
+                "rotx"      : false,
+                "roty"      : false,
+                "tileID"    : 1,
+                "tileSheet" : 0
+            },
+            {
+                "x"         : 8,
+                "y"         : 0,
+                "rotx"      : false,
+                "roty"      : false,
+                "tileID"    : 153,
+                "tileSheet" : 0
+            }
+        ]
+    },
+    "smallCharacter" : {
+        "name"     : "minime",
+        "gravity"  : 1,
+        "elements" : [
+            {
+                "x"         : 0,
+                "y"         : 0,
+                "rotx"      : false,
+                "roty"      : false,
+                "tileID"    : 153,
+                "tileSheet" : 0
+            }
+        ]
+    },
+    "someBlocks" : {
+        "name"     : "Some blocks",
+        "gravity"  : 1,
+        "elements" : [
+            {
+                "x"         : 0,
+                "y"         : 0,
+                "rotx"      : false,
+                "roty"      : false,
+                "tileID"    : 1,
+                "tileSheet" : 0
+            },
+            {
+                "x"         : 0,
+                "y"         : 8,
+                "rotx"      : false,
+                "roty"      : false,
+                "tileID"    : 1,
+                "tileSheet" : 0
+            },
+            {
+                "x"         : 8,
+                "y"         : 8,
+                "rotx"      : false,
+                "roty"      : false,
+                "tileID"    : 1,
+                "tileSheet" : 0
+            }
+        ]
+    },
+    "xwall" : {
+        "name"     : "Other things",
+        "gravity"  : 1,
+        "elements" : [
+            {
+                "x"         : 0,
+                "y"         : 0,
+                "rotx"      : false,
+                "roty"      : false,
+                "tileID"    : 1,
+                "tileSheet" : 0
+            },
+            {
+                "x"         : 8,
+                "y"         : 0,
+                "rotx"      : false,
+                "roty"      : false,
+                "tileID"    : 1,
+                "tileSheet" : 0
+            },
+            {
+                "x"         : 16,
+                "y"         : 0,
+                "rotx"      : false,
+                "roty"      : false,
+                "tileID"    : 1,
+                "tileSheet" : 0
+            },
+            {
+                "x"         : 24,
+                "y"         : 0,
+                "rotx"      : false,
+                "roty"      : false,
+                "tileID"    : 1,
+                "tileSheet" : 0
+            }
+        ]
+    },
+    "ywall" : {
+        "name"     : "Other things",
+        "gravity"  : 1,
+        "elements" : [
+            {
+                "x"         : 0,
+                "y"         : 0,
+                "rotx"      : false,
+                "roty"      : false,
+                "tileID"    : 1,
+                "tileSheet" : 0
+            },
+            {
+                "x"         : 0,
+                "y"         : 8,
+                "rotx"      : false,
+                "roty"      : false,
+                "tileID"    : 1,
+                "tileSheet" : 0
+            },
+            {
+                "x"         : 0,
+                "y"         : 16,
+                "rotx"      : false,
+                "roty"      : false,
+                "tileID"    : 1,
+                "tileSheet" : 0
+            },
+            {
+                "x"         : 0,
+                "y"         : 24,
+                "rotx"      : false,
+                "roty"      : false,
+                "tileID"    : 1,
+                "tileSheet" : 0
+            }
+        ]
+    },
+    "otherThings" : {
+        "name"     : "Other things",
+        "gravity"  : 1,
+        "elements" : [
+            {
+                "x"         : 0,
+                "y"         : 0,
+                "rotx"      : false,
+                "roty"      : false,
+                "tildID"    : 20,
+                "tileSheet" : 0
+            },
+            {
+                "x"         : 8,
+                "y"         : 0,
+                "rotx"      : false,
+                "roty"      : false,
+                "tileID"    : 20,
+                "tileSheet" : 0
+            }
+        ]
+    }
+}

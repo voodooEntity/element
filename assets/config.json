@@ -1,0 +1,10 @@
+{
+	"screen" : {
+		"x" : 32,
+		"y" : 20
+	},
+	"tileWidth" : 8,
+	"preloadDistance" : 2,
+	"moveDistance" : 8,
+	"tickRate"     : 60
+}
